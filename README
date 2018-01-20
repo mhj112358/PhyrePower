@@ -2,9 +2,9 @@ PhyrePower is a software package for fold recognition based on contact threading
 Only PhyrePower binary is provided at the moment. Source code will be published at a later date or provided upon request.
 
 Usage:
---------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
                                       PhyrePower Usage
---------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------
 eg. PhyrePower -q d1b63a1.eig -t sample_database.eig -n 7 -s 4 -G 2
   -q <query>:                         .eig file containing information of query protein
   -t <template>:                      .eig file containing information of template protein(s)
@@ -19,7 +19,7 @@ eg. PhyrePower -q d1b63a1.eig -t sample_database.eig -n 7 -s 4 -G 2
   -M <helical:MetaPSICOV>:            Helical to MetaPSICOV contact weighting ratio in CMO. [Default=1]
   
 Input:
----------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
 The input format of PhyrePower is an 11-line plain text format per protein:
 
 Line 1:        protein id and length (space-separated)
@@ -34,7 +34,7 @@ Lines 5-11:    top 7 eigenvectors of the contact map weighted by the square root
                Eigendecomposition can be computed using eigendecomp provided
               
 Output:
----------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------
 The output format of PhyrePower is a 5-line plain text format per protein pair:
 
 Line 1:        query id, template id and PhyrePower alignment score (specified as -p option above)
